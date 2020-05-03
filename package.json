@@ -1,0 +1,21 @@
+{
+  "name": "blog_vuepress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs",
+    "docs:buildbasis": "vuepress build docs",
+    "docs:build": "node ./builds/addComponents.js && vuepress build docs && node ./builds/delComponents.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vuepress": "^1.4.1"
+  },
+  "dependencies": {
+    "vuepress-plugin-helper-live2d": "^1.0.0"
+  }
+}
