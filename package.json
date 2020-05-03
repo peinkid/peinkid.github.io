@@ -16,6 +16,7 @@
     "vuepress": "^1.4.1"
   },
   "dependencies": {
+    "moment": "^2.25.1",
     "vuepress-plugin-helper-live2d": "^1.0.0"
   }
 }

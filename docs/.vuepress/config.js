@@ -2,6 +2,19 @@ module.exports = {
     base: '/',
     title: 'Peinkid--风逝冰蓠',
     description: 'Peinkid Blog',
+    plugins: [
+        [
+            '@vuepress/last-updated',
+            {
+                transformer: (timestamp, lang) => {
+                    // 不要忘了安装 moment
+                    const moment = require('moment')
+                    moment.locale('zh-cn')
+                    return moment(timestamp).format('YYYY-MM-DD HH:mm')
+                }
+            }
+        ]
+    ],
     head: [
         ['script', {
             src: 'https://cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js'
@@ -71,6 +84,6 @@ module.exports = {
                 title: '关于Peinkid'
             }
         ],
-        lastUpdated: true,
+        lastUpdated: '最后更新时间',
     }
 }
