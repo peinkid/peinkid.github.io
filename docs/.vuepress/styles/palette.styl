@@ -6,14 +6,22 @@
 }
 ::-webkit-scrollbar {
   width: 8px;
+  height: 8px;
   background-color: white;
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb:vertical {
   border-radius: 10px;
-  width 8px;
+  width:8px;
+//   height:1px;
   background-color: #88c1ea;
   background linear-gradient(#88c1ea, #e84118)
+}
+::-webkit-scrollbar-thumb:horizontal {
+  border-radius: 10px;
+  height:8px;
+  background-color: #88c1ea;
+  background linear-gradient(to right,#88c1ea, #e84118)
 }
 .nav-link.action-button{
     letter-spacing: 2px;

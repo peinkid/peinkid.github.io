@@ -88,11 +88,14 @@ module.exports = {
         sidebar: {
             '/all/blog/': [
                 'blog1',
-                'blog2'
+                'blog2',
+                'blog3',
+                'blog4'
             ],
             '/all/tech/': [
                 'tech1',
                 'tech2',
+                'tech3'
             ]
         },
         lastUpdated: '最后更新时间',

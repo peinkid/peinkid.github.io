@@ -49,8 +49,16 @@ export default {
       this.mini = !this.mini
     }
   },
-  created() {
-    console.log(this)
+  mounted() {
+    let firstTime, lastTime
+    window.onunload = () => {
+      lastTime = new Date().getTime() - firstTime
+      if (lastTime <= 5) this.mini = true
+    }
+    window.onbeforeunload = () => {
+      this.mini = true
+      firstTime = new Date().getTime()
+    }
   }
 }
 </script>
