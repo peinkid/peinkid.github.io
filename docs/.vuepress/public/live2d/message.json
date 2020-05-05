@@ -1,21 +1,21 @@
 {
   "mouseover": [{
-      "selector": "#home",
-      "text": ["要回到 主页 么？"]
+      "selector": "a[href='/']",
+      "text": ["要回到 首页 么？"]
     }, {
-      "selector": "#article",
-      "text": ["要看看 文章 么？"]
+      "selector": "a[href='/all/blog/blog1.html']",
+      "text": ["要看看我的 个人创作 么？"]
     },
     {
-      "selector": "#picture",
-      "text": ["要欣赏我收集的 图片 么？"]
+      "selector": "a[href='/all/tech/tech1.html']",
+      "text": ["是不是想来 技术博客 学习了呢？"]
     },
     {
-      "selector": "#music",
-      "text": ["要听听 音乐 么？"]
+      "selector": "a[href='/all/about/about.html']",
+      "text": ["不会吧，你居然想了解 Peinkid 这个菜鸡？"]
     },
     {
-      "selector": ".searchbox",
+      "selector": ".search-box",
       "text": ["在找什么东西呢，需要帮忙吗？"]
     }
   ],

@@ -28,10 +28,18 @@ export default {
           cover: 'https://p1.music.126.net/IwclpJu4gaqhSZrKunEFWg==/3297435379408525.jpg?param=300y300' // prettier-ignore
         },
         {
-          name: 'The',
-          artist: 'Nana Takahashi',
-          url: 'https://cdn.moefe.org/music/mp3/thepartywehaveneverseen.mp3',
-          cover: 'https://cdn.jsdelivr.net/gh/peinkid/peinkid.github.io@v0.1/eye.png' // prettier-ignore
+          name: 'sonder---添加时间:2020-01-01',
+          artist: '司南',
+          url:
+            'https://cdn.jsdelivr.net/gh/peinkid/blog@beta/docs/.vuepress/public/sonder.mp3',
+          cover: 'https://cdn.jsdelivr.net/gh/peinkid/blog@beta/docs/.vuepress/public/audio1.jpg' // prettier-ignore
+        },
+        {
+          name: '应怀酒---添加时间:2020-02-02',
+          artist: '司南',
+          url:
+            'https://cdn.jsdelivr.net/gh/peinkid/blog@beta/docs/.vuepress/public/yinghuaijiu.mp3',
+          cover: 'https://cdn.jsdelivr.net/gh/peinkid/blog@beta/docs/.vuepress/public/audio2.jpg' // prettier-ignore
         }
       ]
     }
