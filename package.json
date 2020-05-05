@@ -13,9 +13,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.4.1",
     "vuepress": "^1.4.1"
   },
   "dependencies": {
+    "@moefe/vue-aplayer": "^2.0.0-beta.5",
     "moment": "^2.25.1",
     "vuepress-plugin-helper-live2d": "^1.0.0"
   }

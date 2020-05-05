@@ -13,7 +13,7 @@ module.exports = {
                     return moment(timestamp).format('YYYY-MM-DD HH:mm')
                 }
             }
-        ]
+        ], '@vuepress/back-to-top'
     ],
     head: [
         ['script', {
@@ -46,44 +46,55 @@ module.exports = {
             },
             {
                 text: '个人创作',
-                link: 'all/blog/blog1.md'
+                link: '/all/blog/blog1.md'
             },
             {
                 text: '技术博客',
-                link: 'all/tech/tech1.md'
+                link: '/all/tech/tech1.md'
             },
             {
                 text: '关于Peinkid',
-                link: 'all/about/blog1.md'
+                link: '/all/about/about.md'
             }
         ],
-        sidebar: [{
-                title: '首页',
-                path: '/'
-            },
-            {
-                title: '个人创作',
-                children: [
-                    'all/blog/blog1.md',
-                    'all/blog/blog2.md',
-                ]
-            },
-            {
-                title: '技术博客',
-                children: [{
-                        title: 'js防抖与节流',
-                        path: 'all/tech/tech1.md'
-                    },
-                    {
-                        title: '设置Chrome解决本地开发跨域',
-                        path: 'all/tech/tech2.md'
-                    }
-                ]
-            },
-            {
-                title: '关于Peinkid'
-            }
-        ],
+        // sidebar: [{
+        //         title: '首页',
+        //         path: '/'
+        //     },
+
+        //     {
+        //         title: '个人创作',
+        //         children: [
+        //             'all/blog/blog1.md',
+        //             'all/blog/blog2.md',
+        //         ]
+        //     },
+        //     {
+        //         title: '技术博客',
+        //         children: [{
+        //                 title: 'js防抖与节流',
+        //                 path: 'all/tech/tech1.md'
+        //             },
+        //             {
+        //                 title: '设置Chrome解决本地开发跨域',
+        //                 path: 'all/tech/tech2.md'
+        //             }
+        //         ]
+        //     },
+        //     {
+        //         title: '关于Peinkid'
+        //     }
+        // ],
+        sidebar: {
+            '/all/blog/': [
+                'blog1',
+                'blog2'
+            ],
+            '/all/tech/': [
+                'tech1',
+                'tech2',
+            ]
+        },
         lastUpdated: '最后更新时间',
     }
 }
