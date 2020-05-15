@@ -1,5 +1,9 @@
 <template>
-  <div class="audioMain">
+  <div
+    :class="isChangeStyle?'audioMain2':'audioMain'"
+    @mouseover="recoverStyle"
+    @mouseout="recoverTime"
+  >
     <a
       class="audioA audioBtn btn-5"
       @click.prevent="handleAudio"
@@ -19,7 +23,9 @@ export default {
   name: 'Audio',
   data() {
     return {
+      time: undefined,
       mini: true,
+      isChangeStyle: false,
       audio: [
         {
           name: 'The Party We Have Never Seen',
@@ -47,9 +53,28 @@ export default {
   methods: {
     handleAudio() {
       this.mini = !this.mini
+    },
+    changeOpacity() {
+      this.time = setInterval(() => {
+        if (this.mini) {
+          this.isChangeStyle = true
+        } else {
+          this.isChangeStyle = false
+        }
+      }, 3000)
+    },
+    recoverStyle() {
+      this.isChangeStyle = false
+      clearInterval(this.time)
+      this.time = undefined
+    },
+    recoverTime() {
+      if (!!this.time) return
+      this.changeOpacity()
     }
   },
   mounted() {
+    this.changeOpacity()
     let firstTime, lastTime
     window.onunload = () => {
       lastTime = new Date().getTime() - firstTime
@@ -57,8 +82,12 @@ export default {
     }
     window.onbeforeunload = () => {
       this.mini = true
+      clearInterval(this.time)
       firstTime = new Date().getTime()
     }
+  },
+  beforeDestroy() {
+    clearInterval(this.time)
   }
 }
 </script>
@@ -68,6 +97,17 @@ export default {
   top: 50%;
   left: 100%;
   transform: translate(-100%, -50%);
+  z-index: 100;
+  transition: all 1s ease;
+}
+.audioMain2 {
+  position: fixed;
+  top: 50%;
+  left: 100%;
+  transform: translate(-30%, -50%);
+  z-index: 100;
+  opacity: 0.2;
+  transition: all 1s ease;
 }
 
 .audio {
@@ -107,16 +147,17 @@ export default {
 
 .btn-5 {
   border: 0 solid;
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
-  outline: 1px solid;
-  outline-color: rgba(255, 255, 255, 0.5);
+  outline: 0 solid;
   outline-offset: 0px;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline-color: rgba(255, 255, 255, 0.5);
   text-shadow: none;
-  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.3s ease;
 }
 
 .btn-5:hover {
   border: 1px solid;
+  outline: 1px solid;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
     0 0 20px rgba(255, 255, 255, 0.2);
   outline-color: #88c1ea;

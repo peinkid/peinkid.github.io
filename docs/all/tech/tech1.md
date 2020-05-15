@@ -9,12 +9,12 @@ title: js防抖与节流
 ```javascript
 //防抖
 function  debounce(fn){
+    let time = null ;   //time:标记定时器返回值
     return function(){
-        let time = null ;   //time:标记定时器返回值
         if(time){
-            cleanTimeOut(time)   //当事件被触发的时候把前一个定时器清除掉
+            clearTimeout(time)   //当事件被触发的时候把前一个定时器清除掉
         }
-        time = setTimeOut(()=>{
+        time = setTimeout(()=>{
             fn.apply(this,arguments)   //重新设置一个新的定时器
             },500)
         }

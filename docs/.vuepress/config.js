@@ -95,7 +95,8 @@ module.exports = {
             '/all/tech/': [
                 'tech1',
                 'tech2',
-                'tech3'
+                'tech3',
+                'tech4'
             ]
         },
         lastUpdated: '最后更新时间',
