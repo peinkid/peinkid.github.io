@@ -53,6 +53,10 @@ module.exports = {
                 link: '/all/tech/tech1.md'
             },
             {
+                text: '每日习题',
+                link: '/all/exc/exc1.md'
+            },
+            {
                 text: '关于Peinkid',
                 link: '/all/about/about.md'
             }
@@ -97,6 +101,9 @@ module.exports = {
                 'tech2',
                 'tech3',
                 'tech4'
+            ],
+            '/all/exc/': [
+                'exc1'
             ]
         },
         lastUpdated: '最后更新时间',

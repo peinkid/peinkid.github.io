@@ -34,18 +34,32 @@ export default {
           cover: 'https://p1.music.126.net/IwclpJu4gaqhSZrKunEFWg==/3297435379408525.jpg?param=300y300' // prettier-ignore
         },
         {
-          name: 'sonder---添加时间:2020-01-01',
+          name: 'sonder---司南~:2020-01-01',
           artist: '司南',
           url:
-            'https://cdn.jsdelivr.net/gh/peinkid/blog@beta/docs/.vuepress/public/sonder.mp3',
-          cover: 'https://cdn.jsdelivr.net/gh/peinkid/blog@beta/docs/.vuepress/public/audio1.jpg' // prettier-ignore
+            'https://cdn.jsdelivr.net/gh/peinkid/blog@beta1/docs/.vuepress/public/mp3/sonder.mp3',
+          cover: 'https://cdn.jsdelivr.net/gh/peinkid/blog@beta1/docs/.vuepress/public/audioimg/audio1.jpg' // prettier-ignore
         },
         {
-          name: '应怀酒---添加时间:2020-02-02',
+          name: '应怀酒---司南~:2020-02-02',
           artist: '司南',
           url:
-            'https://cdn.jsdelivr.net/gh/peinkid/blog@beta/docs/.vuepress/public/yinghuaijiu.mp3',
-          cover: 'https://cdn.jsdelivr.net/gh/peinkid/blog@beta/docs/.vuepress/public/audio2.jpg' // prettier-ignore
+            'https://cdn.jsdelivr.net/gh/peinkid/blog@beta1/docs/.vuepress/public/mp3/yinghuaijiu.mp3',
+          cover: 'https://cdn.jsdelivr.net/gh/peinkid/blog@beta1/docs/.vuepress/public/audioimg/audio2.jpg' // prettier-ignore
+        },
+        {
+          name: '坠落星空---小星星Aurora:2020-05-02',
+          artist: '小星星',
+          url:
+            'https://cdn.jsdelivr.net/gh/peinkid/blog@beta1/docs/.vuepress/public/mp3/zhuiluoxingkong.mp3',
+          cover: 'https://cdn.jsdelivr.net/gh/peinkid/blog@beta1/docs/.vuepress/public/audioimg/audio3.jpg' // prettier-ignore
+        },
+        {
+          name: '我承认---阿悄（肖莎）:2020-05-02',
+          artist: '阿悄',
+          url:
+            'https://cdn.jsdelivr.net/gh/peinkid/blog@beta1/docs/.vuepress/public/mp3/wochengren.mp3',
+          cover: 'https://cdn.jsdelivr.net/gh/peinkid/blog@beta1/docs/.vuepress/public/audioimg/audio4.jpg' // prettier-ignore
         }
       ]
     }
