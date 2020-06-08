@@ -46,7 +46,7 @@ export default {
     import(`./excjs/${this.$frontmatter.question}.js`).then(module => {
       this.content = module.selectOption[this.sort]
       this.answer = module.selectOption.answer[this.sort]
-      this.tips = module.selectOption.tips[this.sort].replace(/[0-9a-zA-Z]+/g, "<span style='color:#0097e6;font-style:italic;font-weight:550'>" + '$&' + "</span>")
+      this.tips = module.selectOption.tips[this.sort].replace(/(?<!<)[0-9a-zA-Z]+(?!\/>)/g, "<span style='color:#0097e6;font-style:italic;font-weight:550'>" + '$&' + "</span>")
     })
   },
   data () {
@@ -82,13 +82,13 @@ export default {
       if (this.curClick === this.answer) {
         swal('回答正确', {
           buttons: false,
-          timer: 1500
+          timer: 1000
         })
       } else {
         swal('继续努力', {
           className: 'fail',
           buttons: false,
-          timer: 1500
+          timer: 1000
         })
       }
     },
@@ -105,7 +105,7 @@ export default {
   display: flex;
   margin-bottom: 16px;
   color: #192a56;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Comic Sans MS,Helvetica Neue,Microsoft Yahei,-apple-system,sans-serif!important;
 }
 .btn {
   padding-top: 1px;
@@ -149,7 +149,7 @@ export default {
 }
 .v-enter-active,
 .v-leave-active {
-  transition: all 1.5s;
+  transition: all 1s;
 }
 .v-enter,
 .v-leave-to {

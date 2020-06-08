@@ -1,6 +1,6 @@
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
-
+import VueParticles from 'vue-particles'
 export default ({
     Vue, // VuePress 正在使用的 Vue 构造函数
     options, // 附加到根实例的一些选项
@@ -8,4 +8,5 @@ export default ({
     siteData // 站点元数据
 }) => {
     Vue.use(MintUI)
+    Vue.use(VueParticles)
 }

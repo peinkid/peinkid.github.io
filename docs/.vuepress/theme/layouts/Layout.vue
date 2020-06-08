@@ -9,6 +9,7 @@
       v-if="audioCom"
       :is="audioCom"
     ></component>
+    <vue-particles clickMode="repulse" :particlesNumber="50" :particleSize="3" color="#88c1ea" linesColor="#e84118" class="bgvue"></vue-particles>
   </div>
 </template>
 
