@@ -113,7 +113,7 @@ export default {
   color: #fff;
   background-color: #4cd137;
   margin-right: 16px;
-  cursor: pointer;
+  cursor:url('https://cdn.jsdelivr.net/gh/peinkid/blog@poniter/docs/.vuepress/public/pointer.cur'),auto !important;
   line-height: 20px;
   text-align: center;
   border-radius: 50%;
@@ -125,7 +125,7 @@ export default {
   padding-top: 1px;
   font-weight: 500;
   margin-right: 16px;
-  cursor: pointer;
+  cursor:url('https://cdn.jsdelivr.net/gh/peinkid/blog@poniter/docs/.vuepress/public/pointer.cur'),auto !important;
   line-height: 20px;
   text-align: center;
   border-radius: 50%;
@@ -139,7 +139,7 @@ export default {
   padding-top: 1px;
   font-weight: 500;
   margin-right: 16px;
-  cursor: pointer;
+  cursor:url('https://cdn.jsdelivr.net/gh/peinkid/blog@poniter/docs/.vuepress/public/pointer.cur'),auto !important;
   line-height: 20px;
   text-align: center;
   border-radius: 50%;
